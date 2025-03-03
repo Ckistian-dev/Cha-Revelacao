@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chá Revelação</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Estilos customizados para as cores rosa e azul claro -->
+    <style>
+      .bg-pink { background-color: #FFC0CB !important; }
+      .bg-lightblue { background-color: #ADD8E6 !important; }
+      .text-pink { color: #FFC0CB !important; }
+      .text-lightblue { color: #ADD8E6 !important; }
+      .btn-pink { background-color: #FFC0CB; border-color: #FFC0CB; color: #fff; }
+      .btn-pink:hover { background-color: #FFB6C1; border-color: #FFB6C1; }
+      .btn-lightblue { background-color: #ADD8E6; border-color: #ADD8E6; color: #fff; }
+      .btn-lightblue:hover { background-color: #9acde0; border-color: #9acde0; }
+    </style>
+  </head>
+  <body>
+
+<!-- Navbar fixa -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-lightblue fixed-top">
+  <div class="container d-flex justify-content-between">
+    <!-- Logo à esquerda -->
+    <a class="navbar-brand" href="#">Chá Revelação</a>
+    
+    <!-- Botão do menu responsivo -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Itens do menu alinhados à direita -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#local">Local</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#presentes">Presentes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#agradecimentos">agradecimentos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#agradecimentos">Confirmação</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Carrossel na Página Inicial -->
+<header id="inicio" class="position-relative vh-100">
+  <div id="carouselExampleAutoplaying" class="carousel slide vh-100" data-bs-ride="carousel">
+    <div class="carousel-inner h-100">
+      <!-- Primeiro Slide -->
+      <div class="carousel-item active h-100">
+        <img src="https://cdn.awsli.com.br/2500x2500/463/463451/produto/215066530/revelac-a-o-azul-e-rosa-jvh85k5q5o.JPG" class="d-block w-100 h-100 object-fit-cover" alt="Imagem 1">
+      </div>
+      <!-- Segundo Slide -->
+      <div class="carousel-item h-100">
+        <img src="https://digitalcorte.com/wp-content/uploads/2024/03/398F4089-3AB0-4B9B-9E73-2A9724D8D632_2_11zon-scaled.webp" class="d-block w-100 h-100 object-fit-cover" alt="Imagem 2">
+      </div>
+      <!-- Terceiro Slide -->
+      <div class="carousel-item h-100">
+        <img src="https://fazendoanossafesta.com.br/wp-content/uploads/2016/11/Convite-2-cha-de-revelacao.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Imagem 3">
+      </div>
+    </div>
+
+    <!-- Controles do Carrossel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+  <!-- Texto fixo sobreposto -->
+  <div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);">
+    <h1 class="fw-bold">Bem-vindo ao Chá Revelação!</h1>
+    <p class="fs-4">Vamos celebrar a chegada do nosso pequeno milagre!</p>
+  </div>
+</header>
+
+<!-- Seção de Localização -->
+<section id="local" class="py-5 bg-pink">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto com a localização -->
+      <div class="col-md-6">
+        <h2>📍 Localização do Chá Revelação</h2>
+        <p>Endereço: Rua Exemplo, 123, Bairro, Cidade - Estado</p>
+        <p>🎉 Venha celebrar esse momento mágico conosco! 💖</p>
+      </div>
+      <!-- Mapa à direita (menor) -->
+      <div class="col-md-6">
+        <div class="ratio ratio-4x3">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.058334154595!2d-122.0842499!3d37.4219999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0e8c1c9d9b7%3A0x0!2sGoogleplex!5e0!3m2!1sen!2s!4v1680012345678" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção Lista de Presentes -->
+<section id="presentes" class="py-5 bg-lightblue">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>🎁 Lista de Presentes</h2>
+      <p class="lead">
+        Sua presença já é o nosso maior presente, mas se quiser contribuir, escolha um item da nossa lista e torne esse dia ainda mais inesquecível! ✨
+      </p>
+    </div>
+    <div class="row">
+      <!-- Item de Presente 1: Kit Enxoval -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://images.tcdn.com.br/img/img_prod/767400/kit_roupas_de_bebe_38_pecas_enxoval_completo_menino_e_menina_945_1_231d581d1803b4220f6aeb58340f2ed8_20211125233351.jpg" class="card-img-top" alt="Kit Enxoval" style="max-height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Kit Enxoval</h5>
+            <p class="card-text">
+              Contribua com um kit completo contendo fraldas, body e itens essenciais para o bem-estar do bebê.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Item de Presente 2: Fraldas -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://cdn.awsli.com.br/2500x2500/2540/2540198/produto/194718927/sasz-08774afea2.jpg" class="card-img-top" alt="fraldas" style="max-height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Fraldas</h5>
+            <p class="card-text">
+              Fraldas confortaveis, do tamanho do bebê.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Item de Presente 3: Brinquedo Educativo -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <img src="https://imgs.casasbahia.com.br/1561865964/1xg.jpg?imwidth=1000" class="card-img-top" alt="Brinquedo Educativo" style="max-height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Brinquedo Educativo</h5>
+            <p class="card-text">
+              Estimule o desenvolvimento do bebê com brinquedos divertidos e educativos, que despertam a curiosidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Seção de Agradecimentos -->
+<section id="agradecimentos" class="py-5 bg-pink">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8">
+        <h2 class="mb-4 text-white">💖 Agradecemos Sua Presença! 💖</h2>
+        <blockquote class="blockquote">
+          <p class="mb-4 text-white" style="font-size: 1.2rem;">
+            "Deem graças ao Senhor, porque ele é bom; o seu amor dura para sempre." <br>
+            <small>(Salmo 107:1)</small>
+          </p>
+        </blockquote>
+        <p class="mb-4 text-white" style="font-size: 1.1rem;">
+          Sua presença em nosso chá revelação tornará este momento ainda mais especial. Agradecemos de coração!
+        </p>
+        <p class="mb-4 text-white" style="font-size: 1.1rem;">
+          Confirme sua presença clicando no botão abaixo:
+        </p>
+        <a href="https://api.whatsapp.com/send?phone=5545999675599&text=Olá,%20confirmo%20minha%20presença%20no%20Chá%20Revelação!" 
+           target="_blank" 
+           class="btn btn-light btn-lg">
+          <i class="fab fa-whatsapp"></i> Confirmar Presença
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-custom text-white py-4 bg-lightblue">
+  <div class="container">
+    <div class="row">
+
+      <!-- Contato -->
+      <div class="col-md-4 mb-3 text-center row d-flex flex-column" target="_blank">
+        <h5 style="font-weight: bold;">Contato</h5>
+        <a href="https://api.whatsapp.com/send?phone=5545999675599&text=Gostaria%20de%20confirmar%20minha%20presen%C3%A7a%20no%20ch%C3%A1%20de%20beb%C3%AA." 
+          target="_blank" class="text-white">
+          <i class="fas fa-phone-alt"></i> (45) 99967-5599
+        </a>
+      </div>
+
+
+
+      <!-- Redes Sociais -->
+      <div class="col-md-4 mb-3 text-center" target="_blank">
+        <h5 style="font-weight: bold;">Redes Sociais</h5>
+        <a href="https://www.facebook.com/Ckistianprogramandosolucoes" target="_blank"  class="text-white fs-3 me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/Ckistianprogramandosolucoes/" target="_blank"  class="text-white fs-3 me-3"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/cristiankist/" target="_blank"  class="text-white fs-3 me-3"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+       
+      <!-- Sobre o Site -->
+      <div class="col-md-4 mb-3 text-center" target="_blank">
+        <h5 style="font-weight: bold;">Sobre o Site</h5>
+        <p>Site desenvolvido por Ckistian<br>Entre em contato e comece o seu!</p>
+        <a href="https://wa.me/554591068514?text=Olá!%20Gostaria%20de%20começar%20meu%20site!." target="_blank"  class="text-white"><i class="fas fa-phone-alt "></i> (45) 99986-1237</a>
+      </div>
+
+    </div>
+    <hr class="bg-light">
+    <div class="text-center">
+      <p>&copy; 2025 SitesByCkistian. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer> 
+
+    <!-- Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
